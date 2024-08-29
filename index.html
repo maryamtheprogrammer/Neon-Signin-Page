@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Page | Maryam Tutorials</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: #000;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        form{
+            background-color: rgb(28, 27, 27);
+            max-height: 350px;
+            max-width: 250px;
+            border: 2px solid aqua;
+            box-shadow: 0 0 20px aqua;
+            padding: 25px;
+            transform: scale(1.4);
+        }
+
+        h1{
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .fill{
+            padding: 10px;
+            margin-left: -0.5em;
+            margin-top: 2rem;
+        }
+
+        .fill input{
+            padding: 5px;
+            width: 200px;
+            margin-top: 1em;
+            border: none;
+            background: transparent;
+            border-bottom: 2px solid aqua;
+            outline: none;
+            color: #fff;
+        }
+
+        .rem-for{
+            padding: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2em;
+        }
+
+        .rem-for label{
+            font-size: 12px;
+            width: 100%;
+            color: #fff;
+        }
+
+        a{
+            font-size: 10px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .btn{
+            margin-top: 1em;
+            width: 100%;
+        }
+
+        button{
+            padding: 5px;
+            width: 200px;
+            border: 1px solid aqua;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        button:hover{
+            background-color: aqua;
+            box-shadow: 0 0 20px aqua;
+            transition: .4s ease;
+        }
+
+        .fill input::placeholder{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <h1>Sign In</h1>
+            <div class="fill">
+                <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            </div>
+            
+          <div class="rem-for">
+            <input type="checkbox" required>
+            <label>Remember Me</label>
+
+            <a href="#">Forget Password?</a>
+          </div>
+
+          <div class="btn">
+            <button type="submit">Sign in</button>
+          </div>
+        </form>
+    </div>
+</body>
+</html>
